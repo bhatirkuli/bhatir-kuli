@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: industrial --default, industrialdark --prefersdark;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@plugin "daisyui/theme" {
+  name: "industrial";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #FFFAF3;
+  --color-base-200: #F7F1E4;
+  --color-base-300: #E8DFCB;
+  --color-base-content: #2A2723;
+
+  --color-primary: #2F3E4E;
+  --color-primary-content: #FFFAF3;
+
+  --color-secondary: #7C6A58;
+  --color-secondary-content: #FFFAF3;
+
+  --color-accent: #A85C32;
+  --color-accent-content: #FFFAF3;
+
+  --color-neutral: #23211E;
+  --color-neutral-content: #F5EFE4;
+
+  --color-info: #5B7C99;
+  --color-success: #6B8E5A;
+  --color-warning: #C08A3E;
+  --color-error: #A63D40;
+
+  --radius-box: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-selector: 0.375rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@plugin "daisyui/theme" {
+  name: "industrialdark";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #1E1C19;
+  --color-base-200: #26231F;
+  --color-base-300: #322E28;
+  --color-base-content: #F0E9DC;
+
+  --color-primary: #8FA6BC;
+  --color-primary-content: #1E1C19;
+
+  --color-secondary: #B3A28F;
+  --color-secondary-content: #1E1C19;
+
+  --color-accent: #C67B4E;
+  --color-accent-content: #1E1C19;
+
+  --color-neutral: #E8E2D4;
+  --color-neutral-content: #1E1C19;
+
+  --color-info: #7FA0B8;
+  --color-success: #8CAD7C;
+  --color-warning: #D3A25E;
+  --color-error: #C1696C;
+
+  --radius-box: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-selector: 0.375rem;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
