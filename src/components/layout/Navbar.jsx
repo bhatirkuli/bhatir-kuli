@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiSearch, FiShoppingCart, FiUser, FiMenu } from "react-icons/fi";
 import Container from "@/components/ui/Container";
+import UserMenu from "@/components/layout/UserMenu";
 import { NAV_LINKS, SITE_NAME } from "@/constants/site";
 
 /**
@@ -14,7 +15,7 @@ export default function Navbar() {
       {/* Top utility bar */}
       <div className="hidden bg-neutral text-neutral-content sm:block">
         <Container className="flex h-9 items-center justify-between text-xs">
-          <span>প্রয়োজনে পাশে, সমাধানে কাছে।</span>
+          <span>প্রয়োজনে পাশে, সমাধানে কাছে</span>
           <span>Need help? +880 1568177153</span>
         </Container>
       </div>
@@ -64,14 +65,7 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-1">
-          <button
-            type="button"
-            className="btn btn-ghost btn-circle"
-            aria-label="Account"
-            title="Authentication coming in Module 3"
-          >
-            <FiUser className="h-5 w-5" />
-          </button>
+          <UserMenu />
           <button
             type="button"
             className="btn btn-ghost btn-circle"

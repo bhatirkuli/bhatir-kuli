@@ -8,7 +8,7 @@ export default function Hero() {
       <Container className="grid grid-cols-1 items-center gap-10 py-16 md:grid-cols-2 md:py-24">
         <div>
           <span className="badge badge-accent badge-outline mb-4">
-            Trusted by 500+ businesses
+            {/* Trusted by 500+ businesses */}
           </span>
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
             Industrial Equipment &amp; Supplies, Delivered Reliably

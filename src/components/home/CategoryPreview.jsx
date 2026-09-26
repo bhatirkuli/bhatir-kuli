@@ -3,6 +3,7 @@ import Container from "@/components/ui/Container";
 // Static placeholder data — replaced with real categories from MongoDB
 // once the Category Management module (Module 4) is built.
 const PLACEHOLDER_CATEGORIES = [
+  "Organic Foods",
   "Power Tools",
   "Safety Equipment",
   "Fasteners & Hardware",

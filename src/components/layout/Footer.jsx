@@ -41,7 +41,7 @@ export default function Footer() {
               <FiMapPin className="shrink-0" /> Dhaka, Bangladesh
             </li>
             <li className="flex items-center gap-2">
-              <FiPhone className="shrink-0" /> +880 1XXX-XXXXXX
+              <FiPhone className="shrink-0" /> +880 1568177153
             </li>
             <li className="flex items-center gap-2">
               <FiMail className="shrink-0" /> support@bhatirkuli.com
